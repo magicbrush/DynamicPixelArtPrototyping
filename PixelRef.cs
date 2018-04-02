@@ -41,6 +41,11 @@ namespace Tipixel
 
 		}
 
+		public void SetValue(float val, int chl = 0)
+		{
+			_PixelRef.SetValue (val, chl);
+		}
+
 		private bool CheckPixel()
 		{
 			if (_PixelRef != null) {

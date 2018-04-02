@@ -30,11 +30,15 @@ namespace Tipixel
 		void Update () {
 			float val= _pxRef.GetValue (_ChannelId);
 			//int quantLevel = _pcoord._OutValueQuantizeLevel;
+			/*
 			float inputRange = 2.0f;
 			float dispRange = _dispMax - _dispMin;
 
 			float valDisp = dispRange * val / inputRange + _dispMin;
 			valDisp = Mathf.Clamp (valDisp, _dispMin, _dispMax);
+			*/
+
+			float valDisp = MapValue (val, _inMin, _inMax, _dispMin, _dispMax);
 
 			string format = "F" + _FractionNumCount.ToString ();
 			string valTxt = valDisp.ToString (format);
