@@ -8,7 +8,7 @@ namespace Tipixel
 	public class PX2TimeLineCtrl : MonoBehaviour {
 		[Header("这个部件主要用于将像素的数值转化为动画的播放速度和延时")]
 		[Header("用法：把记录好的动画prefab拖到这个物体下即可，也可直接对playableDirector进行制定")]
-		[Header("注意：只能控制一个PlayableDirector")]
+		[Header("注意：每个只能控制一个PlayableDirector，如果要控制多个，那几用多个来控制")]
 
 		[Header("要控制的动画")]
 		public PlayableDirector _playableDirector;
