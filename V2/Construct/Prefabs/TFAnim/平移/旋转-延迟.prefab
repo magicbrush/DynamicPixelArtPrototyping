@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1729001074230286}
+  m_IsPrefabAsset: 1
+--- !u!1 &1729001074230286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4672053475885912}
+  - component: {fileID: 114971244127149450}
+  - component: {fileID: 114177611552966796}
+  - component: {fileID: 114336499686762370}
+  - component: {fileID: 114430247932887052}
+  m_Layer: 0
+  m_Name: "\u65CB\u8F6C-\u5EF6\u8FDF"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672053475885912
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729001074230286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114177611552966796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729001074230286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4844aa648828d4f36b59212acee48c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TimeSale: 1
+  _LerpSpd: 1
+  _valueChl: 0
+  _Speed:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: -1
+    _OutMax: 1
+  _Delay:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: -1
+    _OutMax: 1
+  _LocCurves: []
+--- !u!114 &114336499686762370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729001074230286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a76cf6d16bc74319996cff4fa7e1de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TimeSale: 1
+  _LerpSpd: 1
+  _valueChl: 0
+  _Speed:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: -1
+    _OutMax: 1
+  _Delay:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: -1
+    _OutMax: 1
+  _Amplitude: 1
+  _LocCurves: []
+--- !u!114 &114430247932887052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729001074230286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7ef81d0121440c59b8a67ccc372fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Prefabs:
+  - {fileID: 1556786046571908, guid: e8b73d59d113e4463aa31de62bebfff5, type: 2}
+  _BatchCount: 1
+--- !u!114 &114971244127149450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729001074230286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9760f30f270cf4a2cb8dea5ec9b1e9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TimeSale: 1
+  _LerpSpd: 1
+  _coordMode: 0
+  _LocCurves:
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 0
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -3
+      value: -1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 0
+  _valueChl: 0
+  _Speed:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: 1
+    _OutMax: 1
+  _Delay:
+    _InMin: -1
+    _InMax: 1
+    _OutMin: -1
+    _OutMax: 1
+  _Amplitude: 0.4

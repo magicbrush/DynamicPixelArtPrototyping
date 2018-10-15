@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1489953988890558}
+  m_IsPrefabAsset: 1
+--- !u!1 &1489953988890558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4356647389805186}
+  - component: {fileID: 114800305501897382}
+  - component: {fileID: 114412036040784672}
+  - component: {fileID: 114230854968678542}
+  - component: {fileID: 114952060691731574}
+  - component: {fileID: 114401495902034336}
+  - component: {fileID: 114712195456438640}
+  m_Layer: 0
+  m_Name: "Pixel_Rect\u6B63\u65B9\u5F62-\u7F29\u653E\u5F02\u6B65\u901F\u5EA6"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4356647389805186
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114230854968678542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983726cef707b46cb810801d6c4a81d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114401495902034336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5dd931c0084dc98e6634785da8ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _LerpSpd: 3
+  _pxId2D: {fileID: 114412036040784672}
+  _Origin: {x: 0, y: 0, z: 0}
+  _XUnitVector: {x: 1, y: 0, z: 0}
+  _YUnitVector: {x: 0, y: 1, z: 0}
+--- !u!114 &114412036040784672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3673c2f233dfa4dbabe98b76810cc49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CountPerRow: 8
+--- !u!114 &114712195456438640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7ef81d0121440c59b8a67ccc372fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Prefabs:
+  - {fileID: 1399049305309272, guid: 01fa4957eeca44bca806a0bf727f74c2, type: 2}
+  - {fileID: 1260685581272052, guid: 55d9e818100d544c6bb6e2324836dca8, type: 2}
+  - {fileID: 1911843175265966, guid: 7d05ab475fcc44e229fee2f54875631e, type: 2}
+  _BatchCount: 1
+--- !u!114 &114800305501897382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d40314facefc425091a79d4c94f636b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114952060691731574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489953988890558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac643bf1ab114a96a2e86c1c168fb20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Values:
+  - 0
+  - 0
