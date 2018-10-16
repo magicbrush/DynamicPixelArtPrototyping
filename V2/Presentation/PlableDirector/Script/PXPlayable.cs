@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 namespace PixelV2
 {
-    [RequireComponent(typeof(PlayableDirector))]
+    //[RequireComponent(typeof(PlayableDirector))]
     public class PXPlayable : MonoBehaviour
     {
         public enum ExtraPolationMode
@@ -43,8 +43,12 @@ namespace PixelV2
 
         private void UpdatePlayableDirector()
         {
-            PlayableDirector playableDirector =
-                            GetComponent<PlayableDirector>();
+            PlayableDirector [] playableDirectors =
+                            GetComponentsInChildren<PlayableDirector>();
+            if(playableDirectors.Length==0)
+            {
+                return;
+            }
 
             PXValue pxValue = GetComponentInParent<PXValue>();
             if (!pxValue)
@@ -55,26 +59,31 @@ namespace PixelV2
 
             float valDelay = pxValue.GetValue(_ChlIdDelay);
             float delay = _Delay.MapValue(valDelay);
-            if (_delayMode == DelayMode.Normalized)
-            {
-                delay = (float)playableDirector.duration * delay;
-            }
 
-            double TNow = playableDirector.time;
-            double T = _TimeScale * (spd * Time.realtimeSinceStartup + delay);
-
-            double Duration = playableDirector.duration;
-            if (timeExtraPolationMode == ExtraPolationMode.PingPong)
+            foreach(var playableDirector in playableDirectors)
             {
-                T = Mathf.PingPong((float)T, (float)Duration);
-            }
-            else if (timeExtraPolationMode == ExtraPolationMode.Repeat)
-            {
-                T = Mathf.Repeat((float)T, (float)Duration);
-            }
+                if (_delayMode == DelayMode.Normalized)
+                {
+                    delay = (float)playableDirector.duration * delay;
+                }
 
-            playableDirector.time = T;
+                double TNow = playableDirector.time;
+                double T = _TimeScale * (spd * Time.realtimeSinceStartup + delay);
+
+                double Duration = playableDirector.duration;
+                if (timeExtraPolationMode == ExtraPolationMode.PingPong)
+                {
+                    T = Mathf.PingPong((float)T, (float)Duration);
+                }
+                else if (timeExtraPolationMode == ExtraPolationMode.Repeat)
+                {
+                    T = Mathf.Repeat((float)T, (float)Duration);
+                }
+
+                playableDirector.time = T;
+            }
         }
+
     }
 
 }
